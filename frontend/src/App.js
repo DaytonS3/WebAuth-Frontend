@@ -14,9 +14,9 @@ function App(props) {
       <h2>User App</h2>
       <NavLink to="/login">Login</NavLink>
       <NavLink to="/users">Users</NavLink>
-      <button type="button" onClick={logout}>
+      <NavLink type="button" onClick={logout}>
         Logout
-      </button>
+      </NavLink>
       <Route path="/login" component={Login} />
       <Route path="/users" component={Users} />
     </div>
